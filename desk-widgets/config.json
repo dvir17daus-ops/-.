@@ -1,0 +1,206 @@
+{
+  "lang": "he",
+  "name": "",
+
+  "theme": {
+    "mode": "auto",
+    "accent": "#D97757",
+    "width": 290,
+    "radius": 18,
+    "opacity": 0.55,
+    "blur": 22,
+    "fontSize": 13,
+    "font": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif"
+  },
+
+  "clock": {
+    "enabled": true,
+    "position": { "top": 20, "left": 20 },
+    "hour12": false,
+    "showSeconds": false,
+    "showGreeting": true,
+    "showHebrewDate": true,
+    "showProgress": true,
+    "worldClocks": [
+      { "label": "ניו יורק", "timeZone": "America/New_York" },
+      { "label": "לונדון", "timeZone": "Europe/London" },
+      { "label": "טוקיו", "timeZone": "Asia/Tokyo" }
+    ]
+  },
+
+  "weather": {
+    "enabled": true,
+    "position": { "top": 251, "left": 20 },
+    "city": "תל אביב",
+    "latitude": 32.0853,
+    "longitude": 34.7818,
+    "units": "celsius",
+    "days": 5,
+    "refreshMinutes": 15
+  },
+
+  "shabbat": {
+    "enabled": true,
+    "position": { "top": 557, "right": 20 },
+    "latitude": null,
+    "longitude": null,
+    "timeZone": "Asia/Jerusalem",
+    "candleMinutesBeforeSunset": 18,
+    "israel": true,
+    "upcomingHolidays": 2,
+    "refreshMinutes": 180
+  },
+
+  "system": {
+    "enabled": true,
+    "position": { "bottom": 20, "left": 20 },
+    "refreshSeconds": 5,
+    "showTopProcesses": true,
+    "showNetwork": true
+  },
+
+  "calendar": {
+    "enabled": true,
+    "position": { "top": 20, "left": 326 },
+    "showMonthGrid": true,
+    "weekStartsOn": 0,
+    "days": 3,
+    "maxEvents": 6,
+    "calendars": [],
+    "excludeCalendars": [],
+    "refreshMinutes": 5
+  },
+
+  "tasks": {
+    "enabled": true,
+    "position": { "top": 391, "left": 326 },
+    "file": "~/Documents/widget-tasks.md",
+    "title": "המשימות שלי",
+    "maxItems": 8,
+    "showCompleted": true,
+    "refreshSeconds": 15
+  },
+
+  "countdown": {
+    "enabled": true,
+    "position": { "bottom": 20, "left": 326 },
+    "showPast": false,
+    "events": [
+      { "title": "שנה אזרחית חדשה", "date": "2027-01-01", "emoji": "🎆" },
+      { "title": "החופשה הבאה", "date": "2027-03-15", "emoji": "✈️" },
+      { "title": "יום הולדת", "date": "1990-06-20", "emoji": "🎂", "repeat": "yearly" }
+    ]
+  },
+
+  "claude": {
+    "enabled": true,
+    "position": { "top": 20, "right": 326 },
+    "claudeDir": "~/.claude",
+    "showStatus": true,
+    "showTasks": true,
+    "showSessions": true,
+    "showCompleted": true,
+    "maxTasks": 5,
+    "maxSessions": 3,
+    "lookbackDays": 7,
+    "refreshSeconds": 20
+  },
+
+  "news": {
+    "enabled": true,
+    "position": { "bottom": 20, "right": 326 },
+    "title": "חדשות",
+    "icon": "📰",
+    "maxItems": 4,
+    "maxAgeHours": 24,
+    "refreshMinutes": 10,
+    "feeds": [
+      { "name": "ynet", "url": "https://www.ynet.co.il/Integration/StoryRss2.xml" },
+      { "name": "וואלה", "url": "https://rss.walla.co.il/feed/1" },
+      { "name": "Geektime", "url": "https://www.geektime.co.il/feed/" },
+      { "name": "BBC", "url": "https://feeds.bbci.co.uk/news/world/rss.xml" }
+    ],
+    "keywords": []
+  },
+
+  "quote": {
+    "enabled": true,
+    "position": { "top": 493, "left": 20 },
+    "rotateMinutes": 60,
+    "quotes": [
+      { "text": "אם אין אני לי, מי לי? וכשאני לעצמי, מה אני? ואם לא עכשיו, אימתי?", "author": "הלל הזקן" },
+      { "text": "לא עליך המלאכה לגמור, ולא אתה בן חורין להיבטל ממנה.", "author": "רבי טרפון" },
+      { "text": "איזהו חכם? הלומד מכל אדם.", "author": "בן זומא" },
+      { "text": "Stay hungry, stay foolish.", "author": "Steve Jobs" },
+      { "text": "Simplicity is the ultimate sophistication.", "author": "Leonardo da Vinci" },
+      { "text": "The best way to predict the future is to invent it.", "author": "Alan Kay" }
+    ]
+  },
+
+  "market": {
+    "enabled": true,
+    "position": { "top": 20, "right": 20 },
+    "title": "שוק ההון",
+    "range": "1d",
+    "interval": "5m",
+    "refreshMinutes": 2,
+    "symbols": [
+      { "symbol": "^GSPC", "name": "S&P 500" },
+      { "symbol": "^IXIC", "name": "נאסד\"ק" },
+      { "symbol": "TA35.TA", "name": "ת\"א 35" },
+      { "symbol": "ILS=X", "name": "דולר/שקל" },
+      { "symbol": "BTC-USD", "name": "ביטקוין" },
+      { "symbol": "NVDA", "name": "Nvidia" },
+      { "symbol": "AAPL", "name": "Apple" },
+      { "symbol": "GC=F", "name": "זהב" }
+    ]
+  },
+
+  "marketNews": {
+    "enabled": true,
+    "position": { "top": 336, "right": 20 },
+    "title": "חדשות שוק",
+    "icon": "📈",
+    "maxItems": 3,
+    "maxAgeHours": 24,
+    "refreshMinutes": 10,
+    "feeds": [
+      { "name": "גלובס", "url": "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederNode?iID=585" },
+      { "name": "כלכליסט", "url": "https://www.calcalist.co.il/GeneralRSS/0,16335,L-8,00.xml" },
+      { "name": "CNBC", "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html" },
+      { "name": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex" }
+    ],
+    "keywords": []
+  },
+
+  "nowPlaying": {
+    "enabled": true,
+    "position": { "bottom": 20, "right": 20 },
+    "hideWhenIdle": false,
+    "refreshSeconds": 3
+  },
+
+  "custom": {
+    "enabled": false,
+    "position": { "top": 20, "left": "calc(50% - 130px)" },
+    "width": 260,
+    "title": "מותאם אישית",
+    "icon": "🧩",
+    "refreshSeconds": 60,
+    "items": [
+      { "label": "IP מקומי", "icon": "🏠", "command": "ipconfig getifaddr en0 || ipconfig getifaddr en1" },
+      { "label": "IP ציבורי", "icon": "🌍", "command": "curl -s -m 5 https://api.ipify.org" },
+      { "label": "אפליקציות פתוחות", "icon": "🪟", "command": "osascript -e 'tell application \"System Events\" to count (processes whose background only is false)'" },
+      { "label": "גרסת macOS", "icon": "🍎", "command": "sw_vers -productVersion" }
+    ]
+  },
+
+  "ticker": {
+    "enabled": false,
+    "position": { "bottom": 0, "left": 0, "right": 0 },
+    "speedSeconds": 60,
+    "refreshMinutes": 2,
+    "useMarketSymbols": true,
+    "symbols": []
+  }
+}

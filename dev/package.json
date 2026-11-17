@@ -1,0 +1,26 @@
+{
+  "name": "desk-widgets-dev",
+  "private": true,
+  "description": "Build checks, unit tests and a screenshot preview for the desk-widgets Übersicht pack.",
+  "scripts": {
+    "compile": "node compile.js",
+    "test": "node compile.js && esbuild test/tests.js --bundle --platform=node --outfile=.build/tests.js --alias:uebersicht=./test/mock-uebersicht.js --loader:.js=jsx --loader:.jsx=jsx --jsx-factory=html --log-level=warning && node .build/tests.js",
+    "preview": "node compile.js && node preview/shot.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@emotion/core": "^10.3.1",
+    "@emotion/styled": "^10.3.0",
+    "babel-plugin-emotion": "^10.2.2",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2",
+    "emotion": "^10.0.27",
+    "esbuild": "^0.24.2",
+    "playwright": "^1.49.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
